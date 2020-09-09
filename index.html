@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Survey Form</title>
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1 id="title">Survey Form</h1>
+    
+    <form id="survey-form" action="action-page.php">
+        <p id="description">Let us know how we can improve your user experience</p>
+        
+      <div class="row">
+      <div class="col1">
+        <label id="name-label" for="name">Name:</label>
+      </div>
+      <div class="col2">
+        <input type="text" id="name" name="name" placeholder="Enter your name" required>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col1">
+        <label id="email-label" for="email">Email:</label>
+      </div>
+      <div class="col2">
+        <input type="email" pattern="[^ @]*@[^ @]*" value="default@example.com" id="email" name="email" placeholder="Enter your email" required>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col1">
+        <label id="number-label" for="age">Age:</label>
+      </div>
+      <div class="col2">
+        <input type="number" id="number" name="age" placeholder="Enter your age" min="8" max="95" required>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col1">
+        <label for="role">Which best describes your current role?</label>
+      </div>
+      <div class="col2">
+        <select id="dropdown" name="role">
+          <option value="Select">Select an option</option>
+          <option value="student">Student</option>
+          <option value="full-time-job">Full Time Job</option>
+          <option value="part-time-job">Part Time Job</option>
+          <option value="other">Other</option>
+          <option value="non-ya">None of your business</option>
+         </select>
+      </div>
+    </div>
+        
+     <div class="row">
+      <div class="col1">
+        <label id="recommendation" for="recommend">How likely are you to recommend this user interface to a friend?</label>
+      </div>
+      <div class="col2">
+        <input type="radio" name="answer" value="definitely"> Definitely<br>
+        <input type="radio" name="answer" value="maybe"> Maybe<br>
+        <input type="radio" name="answer" value="unsure"> Not sure
+      </div>
+    </div>   
+     
+        
+    <div class="row">
+      <div class="col1">
+        <label for="like">What do you like most about the interface??</label>
+      </div>
+      <div class="col2">
+        <select id="dropdown" name="like">
+          <option value="Select">Select an option</option>
+          <option value="challenges">Challenges</option>
+          <option value="projects">Projects</option>
+          <option value="community">Community</option>
+          <option value="open-source">Open Source</option>
+          <option value="non-ya">None of your business</option>
+         </select>
+      </div>
+    </div>    
+    
+        
+    <div class="row">
+      <div class="col1">
+        <label id="improvements" for="improve">Things that should be improved in the future
+(Check all that apply):</label>
+      </div>
+      <div class="col2">
+        <input type="checkbox" name="project1" value="front-end"> Front-end Projects<br>
+        <input type="checkbox" name="project2" value="back-end"> Back-end Projects<br>
+        <input type="checkbox" name="project3" value="data"> Data Visualization<br>
+        <input type="checkbox" name="project4" value="challenges"> Challenges<br>
+        <input type="checkbox" name="project5" value="videos"> Videos<br>
+        <input type="checkbox" name="project6" value="meetups"> City Meetups<br>
+        <input type="checkbox" name="project7" value="wiki"> Wiki<br>
+        <input type="checkbox" name="project8" value="forum"> Forum<br>
+      </div>
+    </div>   
+        
+        
+    <div class="row">
+      <div class="col1">
+        <label for="subject">Any comments or suggestions?</label>
+      </div>
+      <div class="col2">
+        <textarea id="subject" name="subject" placeholder="Enter your comments here...." style="height:50px"></textarea>
+      </div>
+    </div>
+    <div class="row">
+      <input id="submit"  type="submit" value="Submit">
+    </div>
+    
+    </form>
+        
+   
+</body>
+</html>
